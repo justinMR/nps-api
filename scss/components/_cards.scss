@@ -1,0 +1,47 @@
+.card {
+    border-radius: $card-border-radius;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDE3E9;
+    color: $base-red;
+    box-shadow: rgba(111, 30, 81, 0.4) 0px 5px, rgba(111, 30, 81, 0.3) 0px 10px, rgba(111, 30, 81, 0.2) 0px 15px, rgba(111, 30, 81, 0.1) 0px 20px, rgba(111, 30, 81, 0.05) 0px 25px;
+    
+    // desktop
+    @media only screen and (min-width: $breakpoint-small) {
+        box-shadow: rgba(111, 30, 81, 0.4) -5px 5px, rgba(111, 30, 81, 0.3) -10px 10px, rgba(111, 30, 81, 0.2) -15px 15px, rgba(111, 30, 81, 0.1) -20px 20px, rgba(111, 30, 81, 0.05) -25px 25px;
+    }
+    img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+        height: auto;
+        object-fit:cover;
+        @media only screen and (min-width: $breakpoint-small) {
+            height: 200px;
+        }
+    }
+
+    .card-body {
+        padding: 15px;
+        padding-top: 0;
+
+        span {
+            display: inline-block;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .card-footer {
+        margin-top: auto;
+        background-color: $dark-red;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+    }
+}

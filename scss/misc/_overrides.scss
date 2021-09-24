@@ -1,0 +1,18 @@
+// Vendor
+.hvr-underline-from-center:before  {
+    background: white;
+    bottom: -2px;
+    height: 4px;
+}
+//Just some resets I made along the way
+.text-decoration-none {
+    text-decoration: none;
+    &:hover {
+        text-decoration: inherit;
+    }
+}
+
+//
+section#parks {
+    padding: 30px 0;
+}

@@ -1,0 +1,1 @@
+export const loadingSpinner = document.getElementById('loading-spinner');

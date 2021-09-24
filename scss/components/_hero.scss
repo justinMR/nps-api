@@ -1,0 +1,30 @@
+section#hero {
+    background-image: url('../../images/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7LoResProxy.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    @media only screen and (min-width: $breakpoint-medium) {
+        background-image: url('../../images/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7MdResProxy.jpeg');
+    }
+    @media only screen and (min-width: $breakpoint-large) {
+        background-image: url('../../images/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7HiResProxy.jpeg');
+    }
+    .container-fluid {
+        height: 280px;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        
+    
+        h1 {
+            text-align: center; 
+            color: #fff;
+        }
+
+        br.small {
+            @media only screen and (min-width: 328px) {
+                display: none;
+            }
+        }
+    }
+}

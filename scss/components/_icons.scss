@@ -1,0 +1,38 @@
+i.bi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+
+    &-instagram {
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        &:hover, &:focus, &:active {
+            box-shadow: 0 0 15px rgba(225, 48, 108, .6);
+        }
+    }
+
+    &-youtube {
+        background-color: red;
+        &:hover, &:focus, &:active {
+            box-shadow: 0 0 15px rgba(255, 0, 0, .6);
+        }
+    }
+
+    &-facebook {
+        background-color: #4267b2;
+        &:hover, &:focus, &:active {
+            box-shadow: 0 0 15px rgba(66, 103, 178,.6);
+        }
+    }
+    
+    &-twitter {
+        background-color: #1DA1F2;
+        &:hover, &:focus, &:active {
+            box-shadow: 0 0 15px rgba(29, 161, 242,.6);
+        }
+    }
+}
